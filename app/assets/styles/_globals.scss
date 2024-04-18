@@ -1,0 +1,81 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	color: $white-color;
+	background-color: $background-color;
+
+}
+
+// section {
+// 	margin: 80px 0px 80px 0px;
+
+// 	@include tabletL {
+// 		margin: 50px 0px 50px 0px;
+// 	}
+// 	@include mobileL {
+// 		margin: 40px 0px 40px 0px;
+// 	}
+
+// }
+
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input[type='file'],
+input[type='file']::-webkit-file-upload-button {
+	cursor: pointer;
+	outline: 2px solid transparent;
+  outline-offset: 2px;
+	
+}
+
+// input:focus {
+// 	box-shadow: none !important;
+// }
+
+
+
+.wrapper {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 960px;
+	min-height: 100vh;
+	transition: $transition;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.slick-dots {
+  li button:before,
+  li.slick-active button:before {
+    color: transparent;
+    opacity: 1;
+  }
+  li button:before{
+    background-color: $gray-color;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+
+  }
+  li.slick-active button:before {
+    background-color: $purple-color;
+  }
+}
+
