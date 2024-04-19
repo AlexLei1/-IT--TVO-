@@ -10,6 +10,8 @@ body {
 
 }
 
+
+
 // section {
 // 	margin: 80px 0px 80px 0px;
 
@@ -49,8 +51,8 @@ input[type='file']::-webkit-file-upload-button {
 .wrapper {
 	margin: 0px auto;
 	width: 100%;
+	// padding: 0 32px;
 	max-width: 960px;
-	min-height: 100vh;
 	transition: $transition;
 }
 

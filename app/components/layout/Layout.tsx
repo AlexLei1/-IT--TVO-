@@ -11,8 +11,8 @@ const Layout:FC<ILayout> = ({children}) => {
 	return (
 	 <>
 		<div>
+			<Header/>
 				<div className='wrapper'>
-					<Header/>
 						{children}
 					<Footer/>	
 				</div>

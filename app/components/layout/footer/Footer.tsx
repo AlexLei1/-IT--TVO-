@@ -3,7 +3,7 @@ import styles from './footer.module.scss'
 
 const Footer: FC = () => {
 	return (
-	 <div style={{marginTop: 50}}>Footer</div>
+	 <div style={{marginTop: 1000}}>Footer</div>
 	)
 }
 

@@ -1,0 +1,49 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.wrapper {
+	position: relative;
+	width: 0px;
+	height: 55px;
+	background: transparent;
+	line-height: 55px;
+	padding-right: 55px;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+
+	input {	
+		border: none;
+		background: transparent;
+		width: 0%;
+		outline: none;
+		font-family: sans-serif;
+		font-size: 18px;
+		color: #fff;
+		transition: all 0.3s ease;
+		position: relative;
+
+		&.active  {
+			width: 98%;
+			padding-left: 5px;
+			transition: all 0.5s 0.8s ease;
+		}
+		&::placeholder {
+			color: #fff;
+			opacity: .2;
+		}
+	}
+	button{
+		color: #fff;
+		position: absolute;
+		right: 17px;
+		top: 15px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+
+	&.active{
+		width: 250px;
+		padding-left: 25px;
+		transition: all 0.5s ease;
+	}
+}

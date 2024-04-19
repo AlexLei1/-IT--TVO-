@@ -1,0 +1,13 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.button {
+	position: relative;
+	border-radius: 12px;
+	align-items: center;
+	display: flex;
+	background: $gray-color;
+	white-space: nowrap;
+
+	
+}

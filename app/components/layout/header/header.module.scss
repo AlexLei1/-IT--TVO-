@@ -1,0 +1,35 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 11;
+	padding: 0px 32px;
+	height: 92px;
+	transition: $transition;
+	backdrop-filter: blur(5px);
+
+	div {
+		display: flex;
+		align-items: center;
+	}
+
+	@include tabletS {
+		height: 72px;
+	}
+}
+
+.up {
+	height: 92px;
+	transform: translateY(0px);
+}
+
+.down {
+	height: 92px;
+	transform: translateY(calc(92px) * -1);
+}

@@ -7,7 +7,7 @@ const Home: FC = () => {
 	return (
 		<Meta title='Watch movies online' description='Watch MovieApp movies and TV shows online or stream right to your browser.' >
 			<div className={styles.home}>
-				<section>
+				<section style={{marginTop: 92}}>
 					<AboutSlider/>
 				</section>
 			</div>

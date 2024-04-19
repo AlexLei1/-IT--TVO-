@@ -47,6 +47,9 @@
       ],
       "@/store/*": [
         "store/*"
+      ],
+			"@/ui/svgs/*": [
+        "store/*"
       ]
     },
     "plugins": [
