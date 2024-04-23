@@ -11,27 +11,19 @@ const AboutSlider: FC = () => {
 		arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
     slidesToScroll: 1,
 		adaptiveHeight: true,
 		variableWidth: false,
-		responsive: [
-			{
-				breakpoint: 500,
-				settings: {
-					dots: true,
-				}
-			}
-		]
+		
   };
 
 	return (
-	 	<>
+	 	<div className={styles.aboutSlider}>
 			<Slider {...settings}>
 				<AboutSliderCard/>
 				<AboutSliderCard/>
 			</Slider>
-		</>
+		</div>
 	)
 }
 

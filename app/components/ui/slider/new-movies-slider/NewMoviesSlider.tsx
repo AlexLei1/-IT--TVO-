@@ -8,9 +8,35 @@ const NewMoviesSlider: FC = () => {
 		dots: false,
 		arrows: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
 		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 1640,
+				settings: {
+					slidesToShow: 5,
+				}
+			}, 
+			{
+				breakpoint: 1300,
+				settings: {
+					slidesToShow: 4,
+				}
+			},
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+				}
+			}
+		]
   };
 
 	return (
