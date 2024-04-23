@@ -7,7 +7,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: -14px;
+		right: clamp(-0.813rem, -0.3rem + -0.85vw, -0.5rem);
 		z-index: 99;
 		background: hsla(0,0%,100%,.3);
 		height: 4px;
@@ -18,24 +18,68 @@
 
 .sliderCard {
 	position: relative;
+	overflow: hidden;
 	align-items: center;
-	height: 594px;
+	height: clamp(18.75rem, 6.731rem + 51.28vw, 37.5rem);
+
+	&:before {
+		content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 55%;
+    z-index: 1;
+    border-radius: 0;
+    background: linear-gradient(90deg,#09090c 65%,transparent);
+	}
+
+	@include desktopXS {
+		&:before {
+			display: none;
+		}
+	}
 
 	.imgWrapper {
 		position: absolute;
 		width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-  
+
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		&:before {
+			bottom: 80%;
+			background: linear-gradient(180deg,#09090c,transparent);
+		}
+
+		&:after {
+			top: 50%;
+			background: linear-gradient(0deg,#09090c 24px,transparent);
+		}
+
+	
 
 		img {
 			position: absolute;
 			width: 75%;
-			height: 594px;
+			height: clamp(18.75rem, 6.731rem + 51.28vw, 37.5rem);
 			margin-left: auto;
 			object-fit: cover;
 			inset: 0px;
+
+
+			@include desktopXS {
+				width: 100%;
+			}
+
 		}
 	}
 	.content {
@@ -45,11 +89,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
-		width: 100%;
+		width: 65%;
 		height: auto;
 		z-index: 1;
-		padding-right: 64px;
-		padding-left: 64px;
+		padding: 0px 64px;
 	
 		.imgLogoWrapper {
 			display: flex;
@@ -58,7 +101,7 @@
 		
 			div {
 				max-width: 338px;
-				height: 101px;
+				height: auto;
 				
 				img {
 					height: 100%;
@@ -71,7 +114,7 @@
 		.text {
 			display: flex;
 			align-items: center;
-			gap: 25px;
+			gap: clamp(0.75rem, 0.429rem + 1.37vw, 1.25rem);
 			justify-content: start;
 	
 			span {
@@ -82,19 +125,29 @@
 	
 			span,p {
 				position: relative;
-				font-size: 20px;
+				font-size: $fz-text;
 	
 				&:not(:last-child) {
 					@include dot();
 				}
-				
 			}
+			
 		}
 	
 		.buttonWrapper {
 			display: flex;
+			gap: 16px;
+
+			@include desktopXS {
+				display: none;
+			}
+		}
+
+		@include desktopXS {
+			padding: 0px clamp(1rem, 0.359rem + 2.74vw, 2rem)
 		}
 	}
+
 	
 }
 

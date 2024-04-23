@@ -2,9 +2,10 @@ import { FC } from 'react'
 import styles from './aboutSliderCard.module.scss'
 import Image from 'next/image'
 import Button from '@/components/ui/button/Button'
-import { SvgAvatar, SvgBell } from '@/components/ui/svg'
+import { SvgBell } from '@/components/ui/svg'
 
 const AboutSliderCard: FC = () => {
+
 	return (
 		<div className={styles.sliderCard}>
 
@@ -40,24 +41,23 @@ const AboutSliderCard: FC = () => {
 				</div>
 				<div className={styles.buttonWrapper}>
 					<Button 		
-						fontSize={16} 
-						backgroundRgb={true} 
-						text={'7 дней за 0р'}
-						href={'title'}>
-							<SvgBell/>
+						fontSize={18}
+						backgroundRgb={true}
+						href={''}>
+						Подробнее
 					</Button>
 					<Button 		
-						fontSize={16} 
-						backgroundRgb={true} 
-						text={'7 дней за 0р'}
-						href={'title'}>
+						fontSize={20} 
+						minWidth='0px'
+						href={''}
+						backgroundRgb={false} >
 						<SvgBell/>
 					</Button>
 					<Button 		
-						fontSize={16} 
-						backgroundRgb={true} 
-						text={'7 дней за 0р'}
-						href={'title'}>
+						fontSize={20}
+						minWidth='0px'
+						href={''}
+						backgroundRgb={false} >
 							<SvgBell/>
 					</Button>
 				</div>

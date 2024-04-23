@@ -1,13 +1,11 @@
 import { FC } from 'react'
 import styles from './aboutSlider.module.scss'
-import Image from 'next/image'
 import Slider from 'react-slick'
 import AboutSliderCard from './about-sider-card/AboutSliderCard';
 
 
 
 const AboutSlider: FC = () => {
-
 	var settings = {
 		dots: false,
 		arrows: false,
@@ -15,7 +13,7 @@ const AboutSlider: FC = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-		adaptiveHeight: false,
+		adaptiveHeight: true,
 		variableWidth: false,
 		responsive: [
 			{
@@ -28,13 +26,12 @@ const AboutSlider: FC = () => {
   };
 
 	return (
-	 	<section className={styles.section}>
-				{/* <AboutSliderCard/> */}
+	 	<>
 			<Slider {...settings}>
 				<AboutSliderCard/>
 				<AboutSliderCard/>
 			</Slider>
-		</section>
+		</>
 	)
 }
 

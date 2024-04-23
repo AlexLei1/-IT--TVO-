@@ -1,11 +1,6 @@
 @import 'variables';
-//330
-@mixin mobileS {
-  @media only screen and (max-width: $mobileS) {
-    @content;
-  }
-}
-//400
+
+//375
 @mixin mobileM {
   @media only screen and (max-width: $mobileM) {
     @content;

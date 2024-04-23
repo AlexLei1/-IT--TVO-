@@ -14,11 +14,10 @@ $fz-md: 16px;
 $fz-lg: 18px;
 $fz-xl: 20px;
 $fz-xxl: 22px;
-$fz-text-button: clamp(14px, 5vw, 28px);
+$fz-text: clamp(1rem, 0.84rem + 0.68vw, 1.25rem);
 
 // theme
-$mobileS: 330px;
-$mobileM: 400px;
+$mobileM: 375px;
 $mobileL: 480px;
 $tabletS: 600px;
 $tabletL: 768px;

@@ -4,5 +4,7 @@ export {default as SvgLogo} from './logo.svg'
 export {default as SvgText} from './text.svg'
 export {default as SvgMagnifier} from './magnifier.svg'
 export {default as SvgBell} from './bell.svg'
+export {default as SvgFilm} from './film.svg'
+export {default as SvgProfile} from './profile.svg'
 
 

@@ -13,14 +13,7 @@ body {
 
 
 section {
-	margin: 92px 0px;
-
-	// @include tabletL {
-	// 	margin: 50px 0px ;
-	// }
-	// @include mobileL {
-	// 	margin: 40px 0px;
-	// }
+	margin-top: clamp(2rem, 0.718rem + 5.47vw, 4rem);
 }
 
 .slick-slide {
@@ -63,6 +56,7 @@ input[type='file']::-webkit-file-upload-button {
 // }
 
 
+
 .slick-dots {
   li button:before,
   li.slick-active button:before {
@@ -73,8 +67,8 @@ input[type='file']::-webkit-file-upload-button {
     background-color: $gray-color;
     border-radius: 50%;
     display: inline-block;
-    height: 10px;
-    width: 10px;
+    height: 9px;
+    width: 9px;
 
   }
   li.slick-active button:before {

@@ -1,34 +1,37 @@
 import { FC, ReactNode, useEffect, useState } from 'react'
 import styles from './button.module.scss'
 import Link from 'next/link';
-import useWindowDimensions from '@/hooks/useWindowDimensions';
+
 
 interface IButton {
-	fontSize: number
+	fontSize?: number
 	backgroundRgb: boolean
-	text?: string
+	isRounding?: boolean | undefined
 	children?: ReactNode
 	href?: string
+	paddingLeft?: string
+	paddingRight?: string
+	minWidth?: string
 }
 
-const Button: FC<IButton> = ({fontSize, backgroundRgb, text, href, children}) => {
-	const { width } = useWindowDimensions();
+const Button: FC<IButton> = ({fontSize, backgroundRgb, isRounding, paddingLeft, paddingRight, minWidth, href, children}) => {
 
-	
 
 	return (
 		<>
 			<button className={styles.button} style={{
+				borderRadius: isRounding ? '100px': '12px',
 				fontSize: fontSize,
+				paddingLeft: paddingLeft,
+				paddingRight: paddingRight,
+				minWidth: minWidth,
 				background: backgroundRgb ? 'linear-gradient(270deg, rgba(38,116,251,1) 0%, rgba(106,17,203,1) 100%)' : '',
-
 				}}>
 				{href ? (
-					<Link href={`/${href}`}><span>{text ? text : children}</span></Link>
+					<Link href={`/${href}`}><span>{children}</span></Link>
 				) : (
-					<span>{text ? text : children}</span>
+					<span>{children}</span>
 				)}
-			
 			</button>
 		</>
 	)
