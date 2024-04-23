@@ -12,7 +12,7 @@ const Search: FC = () => {
 	},[isSearch])
 
 	return (
-		<div className={`${styles.wrapper} ${isSearch ? styles.active : ''}`}>
+		<div className={`${styles.search} ${isSearch ? styles.active : ''}`}>
 			<form>
 				<input ref={inputRef} className={`${isSearch ? styles.active : null}`} placeholder="movie" type="text" />
 			</form>

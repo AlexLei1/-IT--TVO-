@@ -6,6 +6,7 @@ import Button from '@/components/ui/button/Button'
 import { SvgBell } from '@/components/ui/svg'
 import Link from 'next/link'
 import {useScrollDirection} from '@/hooks/useScrollDirection'
+import NavLink from '@/components/ui/nav-link/NavLink'
 
 const Header: FC = () => {
 	const scrollDir = useScrollDirection()
@@ -19,28 +20,20 @@ const Header: FC = () => {
 			<div>
 				<Search/>
 				<Button 		
-					fontSize={18} 
+					fontSize={16} 
 					backgroundRgb={true} 
-					paddingY={12}
-					paddingX={16}
-					marginX={8}
-					title={'7 дней за 0р'}
+					text={'7 дней за 0р'}
 					href={'title'}>
 							<SvgBell/>
 				</Button>
 				<Button 		
-					fontSize={18} 
-					backgroundRgb={false} 
-					paddingY={12}
-					paddingX={16}
-					marginX={8}
-					title={'Промокод'}
+					fontSize={16} 
+					backgroundRgb={false}
+					text={'Промокод'}
 					href={'title'}>
 							<SvgBell/>
 				</Button>
-				<Link href={'/'}>
-					<span style={{fontSize: 24, marginLeft: 8}}>Войти</span>
-				</Link>
+				<NavLink href='' text='Войти'/>
 			</div>
 		</div>
 	)

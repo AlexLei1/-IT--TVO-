@@ -2,6 +2,8 @@ import { FC } from 'react'
 import styles from './aboutSlider.module.scss'
 import Image from 'next/image'
 import Slider from 'react-slick'
+import AboutSliderCard from './about-sider-card/AboutSliderCard';
+
 
 
 const AboutSlider: FC = () => {
@@ -13,8 +15,8 @@ const AboutSlider: FC = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-		adaptiveHeight: true,
-
+		adaptiveHeight: false,
+		variableWidth: false,
 		responsive: [
 			{
 				breakpoint: 500,
@@ -26,35 +28,13 @@ const AboutSlider: FC = () => {
   };
 
 	return (
-	 <div className={styles.aboutSlider}>
+	 	<section className={styles.section}>
+				{/* <AboutSliderCard/> */}
 			<Slider {...settings}>
-
-				<div className={styles.card}>
-					<Image 
-						src="/images/avatar.jpg"
-						width={960}
-						height={594}
-						alt='avatar' 
-					/>
-				</div>
-				<div className={styles.card}>
-					<Image 
-						src="/images/avatar.jpg"
-						width={960}
-						height={594}
-						alt='avatar' 
-					/>
-				</div>
-				<div className={styles.card}>
-					<Image 
-						src="/images/avatar.jpg"
-						width={960}
-						height={594}
-						alt='avatar' 
-					/>
-				</div>
+				<AboutSliderCard/>
+				<AboutSliderCard/>
 			</Slider>
-	 </div>
+		</section>
 	)
 }
 

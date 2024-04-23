@@ -7,24 +7,26 @@ body {
 	margin: 0;
 	color: $white-color;
 	background-color: $background-color;
-
+	font-size: 16px;
 }
 
 
 
-// section {
-// 	margin: 80px 0px 80px 0px;
+section {
+	margin: 92px 0px;
 
-// 	@include tabletL {
-// 		margin: 50px 0px 50px 0px;
-// 	}
-// 	@include mobileL {
-// 		margin: 40px 0px 40px 0px;
-// 	}
+	// @include tabletL {
+	// 	margin: 50px 0px ;
+	// }
+	// @include mobileL {
+	// 	margin: 40px 0px;
+	// }
+}
 
-// }
-
-
+.slick-slide {
+	position: relative;
+	margin: 0px 0px;
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -46,21 +48,20 @@ input[type='file']::-webkit-file-upload-button {
 // 	box-shadow: none !important;
 // }
 
-
-
-.wrapper {
-	margin: 0px auto;
-	width: 100%;
-	// padding: 0 32px;
-	max-width: 960px;
-	transition: $transition;
-}
-
 .container {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
+	min-height: 100vh;
 }
+
+// .wrapper {
+// 	margin: 0px auto;
+// 	width: 100%;
+// 	// padding: 0 32px;
+// 	max-width: 960px;
+// 	transition: $transition;
+// }
+
 
 .slick-dots {
   li button:before,

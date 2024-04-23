@@ -29,30 +29,13 @@
     @content;
   }
 }
-//900
+//960
 @mixin desktopXS {
   @media only screen and (max-width: $desktopXS) {
     @content;
   }
 }
-//1080
-@mixin desktopS {
-  @media only screen and (max-width: $desktopS) {
-    @content;
-  }
-}
-//1200
-@mixin desktopM {
-  @media only screen and (max-width: $desktopM) {
-    @content;
-  }
-}
-//1400
-@mixin desktopL {
-  @media only screen and (max-width: $desktopL) {
-    @content;
-  }
-}
+
 
 @mixin fade-bg-gradient($direction: 90deg) {
 	&::before {

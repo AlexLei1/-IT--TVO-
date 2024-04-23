@@ -9,14 +9,14 @@ import { SvgLogo, SvgText } from '../svg'
 
 const Logo: FC = () => {
 	return (
-	<div className={styles.logoWrapper}>
-		<Link href='/' className={styles.link}>
-			<div style={{display: 'flex', alignItems: 'center'}}>
-				<SvgLogo style={{width: 32, height: 50, marginRight: 16}}/>
-				<SvgText style={{width: 95, height: 22 }}/>
-			</div>
-		</Link>
-	</div>
+
+	<Link href='/' className={styles.link}>
+		<div style={{display: 'flex', alignItems: 'center'}}>
+			<SvgLogo style={{width: 32, height: 50}}/>
+			<SvgText style={{width: 88, height: 22}}/>
+		</div>
+	</Link>
+
 	)
 }
 

@@ -10,10 +10,10 @@ interface ILayout {
 const Layout:FC<ILayout> = ({children}) => {
 	return (
 	 <>
-		<div>
+		<div className='container'>	
 			<Header/>
-				<div className='wrapper'>
-						{children}
+				<div>
+					{children}
 					<Footer/>	
 				</div>
 		</div>
