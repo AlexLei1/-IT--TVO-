@@ -6,30 +6,43 @@ $background-color: #09090c;
 $blue-color: #2674fb;
 $white-color: #fff;
 $gray-color: rgba(255, 255, 255, 0.1);
+
+
 // fonts
-$fz-xxs: 12px;
-$fz-xs: 13px;
+$fz-xxs: 10px;
+$fz-xs: 12px;
 $fz-sm: 14px;
 $fz-md: 16px;
 $fz-lg: 18px;
 $fz-xl: 20px;
 $fz-xxl: 22px;
-$fz-text: clamp(1rem, 0.84rem + 0.68vw, 1.25rem);
+$fz-heading-md: 24px;
+$fz-heading-lg: 28px;
+$fz-heading-xl: 32px;
+
+
+//----adaptive-fonts-----
+$fz-xs-adaptive: clamp(0.875rem, 0.795rem + 0.34vw, 1rem); // 14-16
+$fz-sm-adaptive: clamp(0.875rem, 0.715rem + 0.68vw, 1.125rem); // 14-18
+$fz-md-adaptive: clamp(1rem, 0.92rem + 0.34vw, 1.125rem); // 16-18
+$fz-lg-adaptive: clamp(1rem, 0.84rem + 0.68vw, 1.25rem); // 16-20
+$fz-xxl-adaptive: clamp(1.375rem, 1.295rem + 0.34vw, 1.5rem); // 22-24
+$fz-heading-md-adaptive: clamp(1.375rem, 1.135rem + 1.03vw, 1.75rem); // 22-28
+$fz-heading-xl-adaptive: clamp(1.5rem, 1.179rem + 1.37vw, 2rem); // 24-32
+
+
 
 // theme
-$mobileM: 375px;
-$mobileL: 480px;
-$tabletS: 600px;
-$tabletL: 768px;
-$desktopXS: 960px;
+$mobileM: 374px;
+$mobileL: 479px;
+$tabletS: 599px;
+$tabletL: 767px;
+$desktopXS: 959px;
+$desktopL: 1400px;
 
 // element-sizes & animation
-$border-radius: 4px;
-$nav-height: 100px;
-$nav-scroll-height: 70px;
-$tab-height: 42px;
-$tab-width: 120px;
-$easing: cubic-bezier(0.645,0.045,0.355,1);
+$indentationTop: clamp(2rem, 0.718rem + 5.47vw, 4rem); // 32 - 64
+$indentationX: clamp(1rem, 0.359rem + 2.74vw, 2rem); //16 - 32
 $transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 
 

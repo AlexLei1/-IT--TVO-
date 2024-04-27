@@ -1,3 +1,10 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
 .aboutSlider {
+	margin-top: 92px;
 	
+	@include desktopXS {
+		margin-top: 72px;
+	}
 }

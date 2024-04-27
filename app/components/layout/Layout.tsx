@@ -12,10 +12,8 @@ const Layout:FC<ILayout> = ({children}) => {
 	 <>
 		<div className='container'>	
 			<Header/>
-				<div>
-					{children}
-					<Footer/>	
-				</div>
+				<main>{children}</main>
+			<Footer/>	
 		</div>
 	 </>
 	)

@@ -1,8 +1,13 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	color: $white-color;
@@ -10,23 +15,17 @@ body {
 	font-size: 16px;
 }
 
-
-
-section {
-	margin-top: clamp(2rem, 0.718rem + 5.47vw, 4rem);
-}
-
-.slick-slide {
-	position: relative;
-	margin: 0px 0px;
-}
 a {
 	color: inherit;
 	text-decoration: none;
 }
 
-* {
-	box-sizing: border-box;
+main {
+	margin: 0px $indentationX;
+}
+
+section {
+	margin-top: $indentationTop;
 }
 
 input[type='file'],
@@ -37,23 +36,17 @@ input[type='file']::-webkit-file-upload-button {
 	
 }
 
-// input:focus {
-// 	box-shadow: none !important;
-// }
-
 .container {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 }
 
-// .wrapper {
-// 	margin: 0px auto;
-// 	width: 100%;
-// 	// padding: 0 32px;
-// 	max-width: 960px;
-// 	transition: $transition;
-// }
+
+.slick-list {
+	margin: 0 -32px!important;
+	padding: 0 32px!important;
+}
 
 
 

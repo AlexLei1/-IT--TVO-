@@ -18,12 +18,12 @@ const AboutSlider: FC = () => {
   };
 
 	return (
-	 	<div className={styles.aboutSlider}>
+	 	<section className={styles.aboutSlider}>
 			<Slider {...settings}>
 				<AboutSliderCard/>
 				<AboutSliderCard/>
 			</Slider>
-		</div>
+		</section>
 	)
 }
 
