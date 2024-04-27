@@ -17,7 +17,7 @@
 	div {
 		display: flex;
 		align-items: center;
-		gap: 16px;
+		gap: clamp(0.625rem, 0.385rem + 1.03vw, 1rem);
 	}
 
 	@include desktopXS {
@@ -29,9 +29,15 @@
 .up {
 	height: 92px;
 	transform: translateY(0px);
+	@include desktopXS {
+		height: 72px;
+	}
 }
 
 .down {
 	height: 92px;
 	transform: translateY(calc(92px) * -1);
+	@include desktopXS {
+		height: 72px;
+	}
 }

@@ -12,7 +12,7 @@ const NewMoviesSliderCard: FC = () => {
 					sizes='100vw'
 					alt='The Edge' 
 				/>
-				<div className={styles.imgWrapperContent}>
+				<div className={styles.imgContent}>
 					<span className={styles.rating}>8,9</span>
 					<span className={styles.name}>Новый сезон</span>
 				</div>

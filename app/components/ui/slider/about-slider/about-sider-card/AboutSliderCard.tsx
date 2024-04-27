@@ -60,6 +60,13 @@ const AboutSliderCard: FC = () => {
 						backgroundRgb={false} >
 							<SvgBell/>
 					</Button>
+					<Button 		
+						fontSize={20}
+						minWidth='0px'
+						href={''}
+						backgroundRgb={false} >
+							<SvgBell/>
+					</Button>
 				</div>
 			</div>
 		</div>

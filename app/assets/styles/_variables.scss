@@ -4,8 +4,10 @@
 $purple-color: #6a11cb;
 $background-color: #09090c;
 $blue-color: #2674fb;
-$white-color: #fff;
-$gray-color: rgba(255, 255, 255, 0.1);
+$white-color: rgb(255, 255, 255);
+$white-color-opacity: rgb(255, 255, 255, 0.3);
+$gray-color: rgba(9, 9, 12);
+$gray-color-opacity: rgba(9, 9, 12, 0.4);;
 
 
 // fonts
@@ -33,9 +35,9 @@ $fz-heading-xl-adaptive: clamp(1.5rem, 1.179rem + 1.37vw, 2rem); // 24-32
 
 
 // theme
-$mobileM: 374px;
-$mobileL: 479px;
-$tabletS: 599px;
+$mobileM: 375px;
+$mobileL: 480px;
+$tabletS: 600px;
 $tabletL: 767px;
 $desktopXS: 959px;
 $desktopL: 1400px;
@@ -44,6 +46,7 @@ $desktopL: 1400px;
 $indentationTop: clamp(2rem, 0.718rem + 5.47vw, 4rem); // 32 - 64
 $indentationX: clamp(1rem, 0.359rem + 2.74vw, 2rem); //16 - 32
 $transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+$borderRadius: clamp(1rem, 0.679rem + 1.37vw, 1.5rem);
 
 
 @keyframes fade {

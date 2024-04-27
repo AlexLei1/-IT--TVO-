@@ -44,10 +44,9 @@ input[type='file']::-webkit-file-upload-button {
 
 
 .slick-list {
-	margin: 0 -32px!important;
-	padding: 0 32px!important;
+	margin: 0 clamp(-2rem, -0.359rem + -2.74vw, -1rem)!important;
+	padding: 0 $indentationX!important;
 }
-
 
 
 .slick-dots {

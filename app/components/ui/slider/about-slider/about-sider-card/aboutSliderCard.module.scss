@@ -20,24 +20,24 @@
 	position: relative;
 	overflow: hidden;
 	align-items: center;
+	width: 100%;
 	height: clamp(18.75rem, 6.731rem + 51.28vw, 37.5rem);
-	margin-left: -64px;
+	margin-left: clamp(-2rem, -0.359rem + -2.74vw, -1rem);
 
 	&:before {
 		content: "";
     position: absolute;
 		inset: 0 55% 0 0;
-
     z-index: 1;
     border-radius: 0;
     background: linear-gradient(90deg,#09090c 65%,transparent);
-	}
-
-	@include desktopXS {
-		&:before {
+		
+		@include desktopXS {
 			display: none;
 		}
 	}
+
+	
 
 	.imgWrapper {
 		position: absolute;
@@ -62,8 +62,6 @@
 			background: linear-gradient(0deg,#09090c 24px,transparent);
 		}
 
-	
-
 		img {
 			position: absolute;
 			inset: 0px;
@@ -72,8 +70,6 @@
 			margin-left: auto;
 			object-fit: cover;
 			
-
-
 			@include desktopXS {
 				width: 100%;
 			}
@@ -86,24 +82,25 @@
 		bottom: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: clamp(0.75rem, 1.16rem + -0.68vw, 1rem);
 		width: 100%;
 		height: auto;
 		z-index: 1;
-		padding: 0px 64px;
+		padding: 0px $indentationX;
 	
 		.imgLogoWrapper {
 			display: flex;
 			flex-direction: column;
+			justify-content: start;
 			z-index: 1;
-		
+			
 			div {
-				max-width: 338px;
+				max-width: clamp(11rem, 4.51rem + 27.69vw, 21.125rem);
 				height: auto;
 				
 				img {
-					height: 100%;
 					width: 100%;
+					height: 100%;
 					object-fit: contain;
 				}
 			}
@@ -114,7 +111,7 @@
 			align-items: center;
 			gap: clamp(0.75rem, 0.429rem + 1.37vw, 1.25rem);
 			justify-content: start;
-	
+
 			span {
 				border-radius: 10px;
 				padding: 5px 5px;
@@ -122,8 +119,9 @@
 			}
 	
 			span,p {
+				font-size: $fz-md-adaptive;
 				position: relative;
-				font-size: 18px;
+				
 	
 				&:not(:last-child) {
 					@include dot();
@@ -134,19 +132,13 @@
 	
 		.buttonWrapper {
 			display: flex;
-			gap: 16px;
+			gap: 8px;
 
 			@include desktopXS {
 				display: none;
 			}
 		}
-
-		@include desktopXS {
-			padding: 0px clamp(1rem, 0.359rem + 2.74vw, 2rem)
-		}
 	}
-
-	
 }
 
 
