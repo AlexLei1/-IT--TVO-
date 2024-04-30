@@ -1,23 +1,146 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
 .wrapper {
-	.promo {
+	max-width: 100%;
+
+	.block {
+		position: relative;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
-		
-		.content {
-			
-			.title {
+		border-radius: 24px;
+		box-shadow: 0px 0px 33px 0px rgba(255, 255, 255, 0.38) inset;
+		overflow: hidden;
 
-			}
+		@include tabletL {
+			flex-direction: column;
+		}
 
-			.list {
-
-			}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		&:before {
 
 
 		}
 
-		.contentItem {
+		
+		.firstContent {
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			padding: clamp(1.25rem, 0.449rem + 3.42vw, 2.5rem);
+			gap: 32px;
 			
+			.title {
+				font-size: $fz-heading-md-adaptive;
+				font-weight: 700;
+			}
+
+			.list {
+				display: grid;
+				grid-template-columns: max-content max-content;
+				gap: 12px 28px;
+				
+				li {
+					display: flex;
+					gap: 8px;
+					align-items: self-start;
+					text-align: center;
+
+					p {
+
+					}
+				}
+
+				@include desktopXS {
+					grid-template-columns: none;
+				}
+			}
+
+			.btnWrapper {
+				button {
+					min-width: 0;
+				}
+				
+				@include tabletL {
+		
+				}
+			}
+
+			@include tabletL {
+				width: 100%;
+			}
+		}
+
+		.lastContent {
+			width: 40%;
+			display: flex;
+			align-items: center;
+			padding: clamp(1.25rem, 0.449rem + 3.42vw, 2.5rem);
+			
+			ul {
+				display: grid;
+				grid-template-areas: "a a a . " ".  b b b" "c c c . ";
+				text-align: center;
+				gap: 50px 0px;
+
+				@include tabletL {
+					grid-template-areas: "a a a . . " ". . b b b" "c c c . .";
+					gap: 25px 0px;
+				}
+
+				li {
+					padding: 10px 16px;
+					border-radius: 100px;
+					box-shadow: 0px 0px 7px 0px rgba(255, 255, 255, 0.38) inset;
+					font-size: 12px;
+					&:nth-child(even){
+						transform: rotate(20deg);
+					}
+					&:nth-child(odd){
+						transform: rotate(340deg);
+					}
+				}
+				.first {
+					grid-area: a;
+				}
+				.second {
+					grid-area: b;
+				}
+				.third {
+					grid-area: c;
+				}
+
+			}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 293px;
+				height: 320px;
+				background-image: url("/images/popcorn.png");
+				background-repeat: no-repeat;
+				background-position: left;
+
+
+				// @include tabletL {
+				// 	width: 182px;
+				// 	height: 273px;
+
+				// }
+			}
+
+			@include tabletL {
+				width: 100%;
+			}
 		}
 	}
 }

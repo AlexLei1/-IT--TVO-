@@ -23,41 +23,36 @@ const Header: FC = () => {
 			{width >= 960 ? (
 					<div>
 						<Search/>
-						<Button
-							fontSize={16} 
-							backgroundRgb={true}
-							minWidth='0px'
-							href={'/'}>
-								7 дней за 0р
-						</Button>
-						<Button
-							fontSize={16} 
-							backgroundRgb={false}
-							minWidth='0px'
-							href={'/'}>
-								Промокод
-						</Button>
+						<div className={styles.btnWrapper}>
+							<Button
+								backgroundRgb={true}
+								href={'/'}>
+									7 дней за 0р
+							</Button>
+							<Button
+								backgroundRgb={false}
+								href={'/'}>
+									Промокод
+							</Button>
+						</div>
 						<NavLink href='' text='Войти'/>
 					</div>
 				) : (
 					<div>
 						<Search/>
-						<Button
-							fontSize={16}
-							isRounding={true}
-							backgroundRgb={false}
-							minWidth='0px'
-							href={'/'}>
-								<SvgBell/>
-						</Button>
-						<Button
-							fontSize={16}
-							isRounding={true}
-							backgroundRgb={false}
-							minWidth='0px'
-							href={'/'}>
-								<SvgProfile/>
-						</Button>
+						<div className={styles.btnWrapper}>
+							<Button
+								backgroundRgb={false}
+								href={'/'}>
+									<SvgBell/>
+							</Button>
+							<Button
+								backgroundRgb={false}
+								href={'/'}>
+									<SvgProfile/>
+							</Button>
+						</div>
+
 					</div>
 				)}
 		</div>

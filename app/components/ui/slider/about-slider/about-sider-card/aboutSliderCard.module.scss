@@ -37,7 +37,6 @@
 		}
 	}
 
-	
 
 	.imgWrapper {
 		position: absolute;
@@ -130,10 +129,20 @@
 			
 		}
 	
-		.buttonWrapper {
+		.btnWrapper {
 			display: flex;
 			gap: 8px;
+			button {
+				font-size: 18px;
+				padding: 12px 20px;
+				min-width: 0px;
+				border-radius: 16px;
 
+				&:first-child {
+					width: 260px;
+					border-radius: 12px;
+				}
+			}
 			@include desktopXS {
 				display: none;
 			}

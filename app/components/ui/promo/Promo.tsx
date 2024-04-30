@@ -1,43 +1,46 @@
 import { FC } from 'react'
 import styles from './Promo.module.scss'
 import Button from '../button/Button'
-import { Image } from 'next/image';
+import Image  from 'next/image';
 import { SvgBell } from '../svg';
 
 const Promo: FC = () => {
 	return (
 		<section className={styles.wrapper}>
-			<div>
-				<div>
-					<h1></h1>
-					<li>
-						<ul>
+			<div className={styles.block}>
+				<div className={styles.firstContent}>
+
+					<h1 className={styles.title}>Смотри зарубежное<br/>кино</h1>
+
+					<ul className={styles.list}>
+						<li>
 							<SvgBell/>
-							<p></p>
-						</ul>
-						<ul>
+							<p>От 149 ₽ в месяц</p>
+						</li>
+						<li>
 							<SvgBell/>
-							<p></p>
-						</ul>
-						<ul>
+							<p>Доступно на любом устройстве</p>
+						</li>
+						<li>
 							<SvgBell/>
-							<p></p>
-						</ul>
-						<ul>
+							<p>Никакой рекламы</p>
+						</li>
+						<li>
 							<SvgBell/>
-							<p></p>
-						</ul>
-					</li>
-					<Button />
+							<p>Единая подписка без доплат</p>
+						</li>
+					</ul>
+					<div className={styles.btnWrapper}>
+						<Button backgroundRgb={true} href='/'>Смотреть 7 дней за 0₽</Button>
+					</div>
 				</div>
 
-				<div>
-					<li>
-						<ul><span>Субтитры</span></ul>
-						<ul><span>Дубляж</span></ul>
-						<ul><span>FULL HD</span></ul>
-					</li>
-					<Image href={'/public/images/popcorn.jpg'} alt={}/>
+				<div className={styles.lastContent}>
+					<ul>
+						<li className={styles.first}><span>СУБТИТРЫ</span></li>
+						<li className={styles.second}><span>ДУБЛЯЖ</span></li>
+						<li className={styles.third}><span>FULL HD</span></li>
+					</ul>
 				</div>
 			</div>
 		</section>

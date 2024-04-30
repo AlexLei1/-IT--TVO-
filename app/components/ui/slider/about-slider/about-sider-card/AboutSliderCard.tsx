@@ -39,34 +39,28 @@ const AboutSliderCard: FC = () => {
 					<p>США</p>
 					<p>16+</p>
 				</div>
-				<div className={styles.buttonWrapper}>
+				<div className={styles.btnWrapper}>
 					<Button 		
-						fontSize={18}
 						backgroundRgb={true}
 						href={''}>
 						Подробнее
 					</Button>
 					<Button 		
-						fontSize={20} 
-						minWidth='0px'
 						href={''}
 						backgroundRgb={false} >
 						<SvgBell/>
 					</Button>
 					<Button 		
-						fontSize={20}
-						minWidth='0px'
 						href={''}
 						backgroundRgb={false} >
 							<SvgBell/>
 					</Button>
 					<Button 		
-						fontSize={20}
-						minWidth='0px'
 						href={''}
 						backgroundRgb={false} >
 							<SvgBell/>
 					</Button>
+
 				</div>
 			</div>
 		</div>

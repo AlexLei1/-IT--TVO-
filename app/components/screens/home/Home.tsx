@@ -3,6 +3,7 @@ import styles from './home.module.scss'
 import AboutSlider from '@/components/ui/slider/about-slider/AboutSlider'
 import { Meta } from '@/utils/meta/Meta'
 import NewMoviesSlider from '@/components/ui/slider/new-movies-slider/NewMoviesSlider'
+import Promo from '@/components/ui/promo/Promo'
 
 const Home: FC = () => {
 	return (
@@ -10,6 +11,7 @@ const Home: FC = () => {
 			<div className={styles.home}>
 				<AboutSlider/>
 				<NewMoviesSlider/>
+				<Promo/>
 			</div>
 		</Meta>
 	)
