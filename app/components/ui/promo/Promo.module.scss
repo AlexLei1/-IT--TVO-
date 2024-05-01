@@ -18,20 +18,14 @@
 		}
 
 		&:after {
-			content: '';
-			display: block;
-			position: absolute;
-			bottom: 0;
-			right: 0;
+
 		}
 		&:before {
-
 
 		}
 
 		
 		.firstContent {
-			width: 60%;
 			display: flex;
 			flex-direction: column;
 			padding: clamp(1.25rem, 0.449rem + 3.42vw, 2.5rem);
@@ -52,10 +46,6 @@
 					gap: 8px;
 					align-items: self-start;
 					text-align: center;
-
-					p {
-
-					}
 				}
 
 				@include desktopXS {
@@ -64,12 +54,15 @@
 			}
 
 			.btnWrapper {
+				max-width: 100%;
+
 				button {
-					min-width: 0;
+					min-width: 50%;
 				}
-				
+			
 				@include tabletL {
-		
+					display: flex;
+					justify-content: center;
 				}
 			}
 
@@ -79,20 +72,20 @@
 		}
 
 		.lastContent {
-			width: 40%;
+			position: relative;
 			display: flex;
-			align-items: center;
-			padding: clamp(1.25rem, 0.449rem + 3.42vw, 2.5rem);
 			
 			ul {
 				display: grid;
 				grid-template-areas: "a a a . " ".  b b b" "c c c . ";
 				text-align: center;
 				gap: 50px 0px;
+				margin-right: 200px;
 
 				@include tabletL {
 					grid-template-areas: "a a a . . " ". . b b b" "c c c . .";
 					gap: 25px 0px;
+					margin: 0;
 				}
 
 				li {
@@ -116,26 +109,31 @@
 				.third {
 					grid-area: c;
 				}
-
+				@include tabletL {
+					padding-left: clamp(1.25rem, 0.475rem + 3.31vw, 2.063rem);
+					padding-top: clamp(1.25rem, 0.475rem + 3.31vw, 2.063rem);
+					padding-bottom: clamp(1.25rem, 0.475rem + 3.31vw, 2.063rem);
+				}
 			}
-			&:before {
-				content: '';
-				display: block;
+			.imgWrapper {
 				position: absolute;
-				bottom: 0;
 				right: 0;
-				width: 293px;
-				height: 320px;
-				background-image: url("/images/popcorn.png");
-				background-repeat: no-repeat;
-				background-position: left;
+				bottom: -120px;
+				max-width: 100%;
+				height: 350px;
+				transform: rotate(340deg);
+				
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+				}
 
-
-				// @include tabletL {
-				// 	width: 182px;
-				// 	height: 273px;
-
-				// }
+				@include tabletL {
+					height: 240px;
+					bottom: -40px;
+					transform: rotate(330deg);
+				}
 			}
 
 			@include tabletL {

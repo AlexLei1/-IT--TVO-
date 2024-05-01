@@ -41,8 +41,7 @@ const NewMoviesSlider: FC = () => {
 
 	return (
 		<section className={styles.sliderWrapper}>
-			{/* <NewMoviesSliderCard/> */}
-			<Slider className={styles.slyder} {...settings}>
+			<Slider {...settings}>
 				<NewMoviesSliderCard/>
 				<NewMoviesSliderCard/>
 				<NewMoviesSliderCard/>

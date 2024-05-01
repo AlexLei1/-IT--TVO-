@@ -4,6 +4,7 @@ import AboutSlider from '@/components/ui/slider/about-slider/AboutSlider'
 import { Meta } from '@/utils/meta/Meta'
 import NewMoviesSlider from '@/components/ui/slider/new-movies-slider/NewMoviesSlider'
 import Promo from '@/components/ui/promo/Promo'
+import TopMoviesSlider from '@/components/ui/slider/top-movies-slider/TopMoviesSlider'
 
 const Home: FC = () => {
 	return (
@@ -12,6 +13,7 @@ const Home: FC = () => {
 				<AboutSlider/>
 				<NewMoviesSlider/>
 				<Promo/>
+				<TopMoviesSlider/>
 			</div>
 		</Meta>
 	)

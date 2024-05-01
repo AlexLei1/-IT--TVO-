@@ -1,7 +1,7 @@
 @import 'assets/styles/variables';
 @import 'assets/styles/mixins';
 
-.newMoviesSliderCard {
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -51,11 +51,9 @@
 		text-align: left;
 		font-size: $fz-sm-adaptive;
 		p {
-			
 			text-overflow:ellipsis;
 			white-space:nowrap;
 			overflow:hidden;
-
 		}
 	}
 }

@@ -41,6 +41,15 @@ const Promo: FC = () => {
 						<li className={styles.second}><span>ДУБЛЯЖ</span></li>
 						<li className={styles.third}><span>FULL HD</span></li>
 					</ul>
+					<div className={styles.imgWrapper}>
+						<Image 
+							src="/images/popcorn.png"
+							width={0}
+							height={0}
+							sizes='100vw'
+							alt='avatarLogo' 
+						/>
+					</div>
 				</div>
 			</div>
 		</section>

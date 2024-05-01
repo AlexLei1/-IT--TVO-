@@ -1,0 +1,36 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.wrapper {
+	// margin-right: 32px;
+	
+	.link {
+		position: relative;
+		align-items: center;
+		display: flex;
+
+		.svgWrapper {
+
+
+			svg {
+
+			}
+		}
+
+		.movieImgWrapper {
+			position: relative;
+			padding: 0px 130px 120% ;
+
+			align-items: center;
+	
+
+
+			img {
+				object-fit: cover;
+				border-radius: $borderRadius;
+				object-position: top center;
+			}
+		}
+	}
+}
+
