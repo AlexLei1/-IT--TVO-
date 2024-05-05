@@ -6,7 +6,6 @@ import { Svg1 } from '@/components/ui/svg';
 
 const TopMoviesSliderCard: FC = () => {
 	return (
-		<>
 		<div className={styles.wrapper}>
 			<Link className={styles.link} href={`/`}>
 				<div className={styles.svgWrapper}>
@@ -15,15 +14,13 @@ const TopMoviesSliderCard: FC = () => {
 				<div className={styles.movieImgWrapper}>
 					<Image 
 						src="/images/TheEdge.jpg"
-						width={0}
-						height={0}
+						fill
 						sizes='100vw'
 						alt='qwe'
 					/>
 				</div>
 			</Link>
 		</div>
-		</>
 	)
 }
 

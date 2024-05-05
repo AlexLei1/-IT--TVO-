@@ -9,15 +9,17 @@ const TopMoviesSlider: FC = () => {
 		dots: false,
 		arrows: false,
 		infinite: false,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		adaptiveHeight: true,
 	};
 
 	return (
-		<section className={styles.sliderWrapper}>
-							{/* <TopMoviesSliderCard/> */}
+		<section className={styles.wrapper}>
 			<Slider {...settings}>
+				<TopMoviesSliderCard/>
+				<TopMoviesSliderCard/>
+				<TopMoviesSliderCard/>
 				<TopMoviesSliderCard/>
 				<TopMoviesSliderCard/>
 				<TopMoviesSliderCard/>

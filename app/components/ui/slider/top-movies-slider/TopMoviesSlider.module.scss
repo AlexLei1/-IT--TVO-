@@ -1,0 +1,10 @@
+.wrapper {
+	div:global(.slick-track){
+		min-width: max-content;
+	}
+	div:global(.slick-slide){
+		max-width: max-content;
+		margin-right: clamp(0.938rem, 0.737rem + 0.85vw, 1.25rem);
+		display: block;
+	}
+}
