@@ -9,5 +9,8 @@ export {default as SvgProfile} from './profile.svg'
 export {default as Svg1} from './1.svg'
 export {default as Svg2} from './2.svg'
 export {default as Svg3} from './3.svg'
+export {default as SvgVk} from './vk.svg'
+export {default as SvgTg} from './tg.svg'
+export {default as SvgYoutube} from './youtube.svg'
 
 

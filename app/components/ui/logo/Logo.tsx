@@ -11,9 +11,11 @@ const Logo: FC = () => {
 	return (
 
 	<Link href='/' className={styles.link}>
-		<div style={{display: 'flex', alignItems: 'center'}}>
-			<SvgLogo style={{width: 32, height: 50}}/>
-			<SvgText style={{width: 88, height: 22}}/>
+		<div className={styles.svgLogoWrapper}>
+			<span className='icon-logo'></span>
+		</div>
+		<div className={styles.svgTextWrapper}>
+			<span className='icon-text'></span>
 		</div>
 	</Link>
 

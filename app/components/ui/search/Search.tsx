@@ -16,7 +16,7 @@ const Search: FC = () => {
 			<form>
 				<input ref={inputRef} className={`${isSearch ? styles.active : null}`} placeholder="movie" type="text" />
 			</form>
-			<button onClick={() => setIsSearch(!isSearch)} ><SvgMagnifier/></button>
+			<button onClick={() => setIsSearch(!isSearch)} ><span className='icon-magnifier'></span></button>
 		</div>
 	)
 }

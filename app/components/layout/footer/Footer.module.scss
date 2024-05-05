@@ -1,0 +1,64 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	gap: 44px;
+
+	.socialContainer {
+		display: flex;
+		justify-content: space-between;
+	
+		.btnWrapper {
+
+		}
+
+		.socialLinkContainer {
+			display: flex;
+			gap: 24px;
+			align-items: center;
+			text-align: center;
+		}
+
+		.socialLinkWrapper {
+			display: flex;
+			gap: 4px;
+			text-align: center;
+			align-items: center;
+
+			span {
+				font-size: 14.3px;
+				line-height: 3px;
+			}
+
+		}
+
+	}
+	.contactsContainer {
+		border-bottom: 1px solid white;
+		padding: 20px;
+		ul {
+			display: flex;
+			justify-content: space-around;
+			gap: 24px;
+			align-items: center;
+
+			li {
+
+			}
+		}
+	}
+	.copyrightContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		p {
+
+		}
+		.logoWrapper {
+			
+		}
+	}
+}

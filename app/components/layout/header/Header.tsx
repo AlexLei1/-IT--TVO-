@@ -16,7 +16,7 @@ const Header: FC = () => {
 
 	return (
 	 	<div className={`
-			${styles.header}\
+			${styles.wrapper}\
 			${scrollDir === 'up' ? styles.up : ''} 
 			${scrollDir === 'down' ? styles.down : ''}`}>
 			<Logo/>

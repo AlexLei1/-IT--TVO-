@@ -9,9 +9,7 @@ interface INavLink {
 
 const NavLink: FC<INavLink> = ({text, href}) => {
 	return (
-		<>
-			<Link className={styles.navLink} href={`/${href}`}>{text}</Link>
-		</>
+		<Link className={styles.navLink} href={`/${href}`}>{text}</Link>
 	)
 }
 

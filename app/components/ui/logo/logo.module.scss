@@ -1,0 +1,14 @@
+.link {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	
+	.svgLogoWrapper {
+		font-size: 50px;
+		line-height: 0px;
+	}
+	.svgTextWrapper {
+		font-size: 22px;
+	}
+}
+
