@@ -24,6 +24,12 @@
     @content;
   }
 }
+//820
+@mixin tabletXL {
+  @media only screen and (max-width: $tabletXL) {
+    @content;
+  }
+}
 //960
 @mixin desktopXS {
   @media only screen and (max-width: $desktopXS) {

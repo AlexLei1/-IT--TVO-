@@ -1,11 +1,6 @@
 import { FC } from 'react'
 import styles from './logo.module.scss'
-import Image from 'next/image'
 import Link from 'next/link'
-import { SvgLogo, SvgText } from '../svg'
-
-
-
 
 const Logo: FC = () => {
 	return (
