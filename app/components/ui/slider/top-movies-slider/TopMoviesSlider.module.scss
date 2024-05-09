@@ -1,9 +1,11 @@
 .wrapper {
+	div:global(.slick-list) {
+		min-height: clamp(16.875rem, 12.869rem + 17.09vw, 23.125rem);
+	}
 	div:global(.slick-track){
-		min-width: max-content;
+	
 	}
 	div:global(.slick-slide){
-		max-width: max-content;
-		margin-right: clamp(0.938rem, 0.737rem + 0.85vw, 1.25rem);
+
 	}
 }

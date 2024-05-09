@@ -6,7 +6,7 @@ import { Svg1 } from '@/components/ui/svg';
 
 const TopMoviesSliderCard: FC = () => {
 	return (
-		<div className={styles.wrapper}>
+
 			<Link className={styles.link} href={`/`}>
 				<div className={styles.svgWrapper}>
 					<Svg1/>
@@ -20,7 +20,7 @@ const TopMoviesSliderCard: FC = () => {
 					/>
 				</div>
 			</Link>
-		</div>
+
 	)
 }
 

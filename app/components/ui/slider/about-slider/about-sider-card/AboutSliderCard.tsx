@@ -60,7 +60,6 @@ const AboutSliderCard: FC = () => {
 						backgroundRgb={false} >
 							<SvgBell/>
 					</Button>
-
 				</div>
 			</div>
 		</div>

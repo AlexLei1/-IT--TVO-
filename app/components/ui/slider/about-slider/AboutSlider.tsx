@@ -19,6 +19,7 @@ const AboutSlider: FC = () => {
 
 	return (
 	 	<section className={styles.aboutSlider}>
+			
 			<Slider {...settings}>
 				<AboutSliderCard/>
 				<AboutSliderCard/>

@@ -1,14 +1,11 @@
 @import 'assets/styles/variables';
 @import 'assets/styles/mixins';
 
-.wrapper {
-	width: max-content;
-
 	.link {
     display: flex;
     align-items: center;
-    position: relative;
-		
+    position: relative;		
+
 		.svgWrapper {
 			margin-right: clamp(-0.938rem, 0.601rem + -2.56vw, 0rem);
 			width: clamp(3.75rem, 1.306rem + 10.43vw, 7.563rem);
@@ -45,5 +42,3 @@
 			}
 		}
 	}
-}
-
