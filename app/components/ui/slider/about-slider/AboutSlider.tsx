@@ -3,8 +3,6 @@ import styles from './aboutSlider.module.scss'
 import Slider from 'react-slick'
 import AboutSliderCard from './about-sider-card/AboutSliderCard';
 
-
-
 const AboutSlider: FC = () => {
 	var settings = {
 		dots: false,
@@ -14,17 +12,15 @@ const AboutSlider: FC = () => {
     slidesToScroll: 1,
 		adaptiveHeight: true,
 		variableWidth: false,
-		
   };
 
 	return (
-	 	<section className={styles.aboutSlider}>
-			
+	 	<div className={styles.container}>
 			<Slider {...settings}>
 				<AboutSliderCard/>
 				<AboutSliderCard/>
 			</Slider>
-		</section>
+		</div>
 	)
 }
 

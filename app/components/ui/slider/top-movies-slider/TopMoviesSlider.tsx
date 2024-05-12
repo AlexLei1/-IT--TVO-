@@ -83,7 +83,7 @@ const TopMoviesSlider: FC = () => {
 	};
 
 	return (
-		<section className={styles.wrapper}>
+		<div className={styles.container}>
 			<Slider {...settings}>
 				<TopMoviesSliderCard/>
 				<TopMoviesSliderCard/>
@@ -96,7 +96,7 @@ const TopMoviesSlider: FC = () => {
 				<TopMoviesSliderCard/>
 				<TopMoviesSliderCard/>
 			</Slider>
-		</section>
+		</div>
 	)
 }
 

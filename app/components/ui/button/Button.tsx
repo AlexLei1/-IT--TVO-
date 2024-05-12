@@ -6,10 +6,11 @@ import Link from 'next/link';
 interface IButton {
 	backgroundRgb: boolean
 	children?: ReactNode
+	svg?: string
 	href?: string
 }
 
-const Button: FC<IButton> = ({backgroundRgb, href, children}) => {
+const Button: FC<IButton> = ({backgroundRgb, href, svg, children}) => {
 
 
 	return (
@@ -18,7 +19,7 @@ const Button: FC<IButton> = ({backgroundRgb, href, children}) => {
 				background: backgroundRgb ? 'linear-gradient(270deg, rgba(38,116,251,1) 0%, rgba(106,17,203,1) 100%)' : '',
 				}}>
 				{href ? (
-					<Link href={`/${href}`}><span>{children}</span></Link>
+					<Link className={`${svg}`} href={`/${href}`}><span>{children}</span></Link>
 				) : (
 					<span>{children}</span>
 				)}

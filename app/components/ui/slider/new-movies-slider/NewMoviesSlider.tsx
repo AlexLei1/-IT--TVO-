@@ -40,7 +40,7 @@ const NewMoviesSlider: FC = () => {
   };
 
 	return (
-		<section className={styles.sliderWrapper}>
+		<div className={styles.container}>
 			<Slider {...settings}>
 				<NewMoviesSliderCard/>
 				<NewMoviesSliderCard/>
@@ -50,7 +50,7 @@ const NewMoviesSlider: FC = () => {
 				<NewMoviesSliderCard/>
 				<NewMoviesSliderCard/>
 			</Slider>
-		</section>
+		</div>
 	)
 }
 
