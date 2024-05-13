@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const NewMoviesSliderCard: FC = () => {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.container}>
 			<div className={styles.imgWrapper}>
 				<Image 
 					src="/images/TheEdge.jpg"

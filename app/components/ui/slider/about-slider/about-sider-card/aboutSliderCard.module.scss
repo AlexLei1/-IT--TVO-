@@ -9,7 +9,7 @@
 		transform: translateY(-50%);
 		right: clamp(-0.813rem, -0.3rem + -0.85vw, -0.5rem);
 		z-index: 99;
-		background: hsla(0,0%,100%,.3);
+		background: $dark-color;
 		height: 4px;
 		width: 4px;
 		border-radius: 50%;
@@ -24,7 +24,7 @@
 	width: 100%;
 	height: clamp(18.75rem, 6.731rem + 51.28vw, 37.5rem);
 
-	
+
 
 	&:before {
 		content: "";
@@ -32,7 +32,7 @@
 		inset: 0 55% 0 0;
     z-index: 1;
     border-radius: 0;
-    background: linear-gradient(90deg,#09090c 65%,transparent);
+    background: linear-gradient(90deg,$dark-color 65%,transparent);
 		
 		@include desktopXS {
 			display: none;
@@ -55,12 +55,12 @@
 
 		&:before {
 			bottom: 80%;
-			background: linear-gradient(180deg,#09090c,transparent);
+			background: linear-gradient(180deg,$dark-color, transparent);
 		}
 
 		&:after {
 			top: 50%;
-			background: linear-gradient(0deg,#09090c 24px,transparent);
+			background: linear-gradient(0deg,$dark-color 24px,transparent);
 		}
 
 		img {
@@ -132,15 +132,15 @@
 		}
 		.descriptionWrapper {
 			font-size: $fz-lg-adaptive;
+			max-width: 640px;
 		}
 		.btnWrapper {
 			display: flex;
 			gap: 8px;
 			width: 260px;
-			@include desktopXS {
-				flex-direction: column;	
-			}
+
 			@include tabletS {
+				flex-direction: column;	
 				width: 100%;
 			}
 
@@ -168,13 +168,13 @@
 						flex: 1 1 auto;
 					}
 				}
-
-				@include desktopXS {
-					
-				}
 			}
 		}
 	}
+}
+
+.height {
+	height: 550px!important;
 }
 
 @include desktopXS {

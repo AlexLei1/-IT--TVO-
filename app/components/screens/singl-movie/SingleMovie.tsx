@@ -2,6 +2,7 @@ import { FC } from 'react'
 import styles from './SingleMovie.module.scss'
 import { Meta } from '@/utils/meta/Meta'
 import AboutSliderCard from '@/components/ui/slider/about-slider/about-sider-card/AboutSliderCard'
+import SeriesSlider from '@/components/ui/slider/series-slider/SeriesSlider'
 
 const SingleMovie: FC = () => {
 	return (
@@ -9,6 +10,9 @@ const SingleMovie: FC = () => {
 			<div className={styles.container}>
 				<section>
 					<AboutSliderCard/>
+				</section>
+				<section>
+					<SeriesSlider/>
 				</section>
 			</div>
 		</Meta>

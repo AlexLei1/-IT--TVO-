@@ -1,5 +1,5 @@
 import { FC, useState } from 'react'
-import styles from './header.module.scss'
+import styles from './Header.module.scss'
 import Logo from '@/components/ui/logo/Logo'
 import Search from '@/components/ui/search/Search'
 import Button from '@/components/ui/button/Button'
@@ -43,14 +43,12 @@ const Header: FC = () => {
 						<div className={styles.btnWrapper}>
 							<Button
 								backgroundRgb={false}
-								href={'/'}>
-									<SvgBell/>
-							</Button>
+								href={'/'}
+								svg='icon-bell'/>
 							<Button
 								backgroundRgb={false}
-								href={'/'}>
-									<SvgProfile/>
-							</Button>
+								href={'/'}
+								svg='icon-profile'/>
 						</div>
 
 					</div>

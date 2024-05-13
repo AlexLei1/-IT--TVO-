@@ -10,7 +10,7 @@ const AboutSliderCard: FC = () => {
 	const { asPath } = useRouter()
 	console.log(asPath)
 	return (
-		<div className={styles.container}>
+		<div className={`${styles.container} ${asPath === '/movie' ? styles.height : ''}`}>
 			<div className={styles.imgWrapper}>
 				<Image 
 					src="/images/avatar.jpg"

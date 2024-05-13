@@ -1,4 +1,4 @@
-import styles from './search.module.scss'
+import styles from './Search.module.scss'
 import { FC, useEffect, useRef, useState, forwardRef } from 'react'
 import { SvgMagnifier } from '../svg'
 

@@ -1,0 +1,17 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.container {
+	div:global(.slick-list) {
+		min-height: clamp(10.125rem, 6.519rem + 15.38vw, 15.75rem);
+		margin: 0 clamp(-2rem, -0.359rem + -2.74vw, -1rem);
+		padding: 0 $indentationX;
+	}
+	div:global(.slick-track){
+	
+	}
+	div:global(.slick-slide){
+
+	}
+	
+}

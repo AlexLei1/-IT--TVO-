@@ -2,7 +2,7 @@
 
 // color
 $purple-color: #6a11cb;
-$background-color: #09090c;
+$dark-color: #09090c;
 $blue-color: #2674fb;
 $white-color: rgb(255, 255, 255);
 $white-color-opacity: rgba(255, 255, 255, 0.4);
@@ -28,6 +28,7 @@ $fz-xs-adaptive: clamp(0.875rem, 0.795rem + 0.34vw, 1rem); // 14-16
 $fz-sm-adaptive: clamp(0.875rem, 0.715rem + 0.68vw, 1.125rem); // 14-18
 $fz-md-adaptive: clamp(1rem, 0.92rem + 0.34vw, 1.125rem); // 16-18
 $fz-lg-adaptive: clamp(1rem, 0.84rem + 0.68vw, 1.25rem); // 16-20
+$fz-xl-adaptive: clamp(1.125rem, 1.045rem + 0.34vw, 1.25rem); // 18-20
 $fz-xxl-adaptive: clamp(1.375rem, 1.295rem + 0.34vw, 1.5rem); // 22-24
 $fz-heading-md-adaptive: clamp(1.375rem, 1.135rem + 1.03vw, 1.75rem); // 22-28
 $fz-heading-xl-adaptive: clamp(1.5rem, 1.179rem + 1.37vw, 2rem); // 24-32
@@ -46,8 +47,8 @@ $desktopL: 1400px;
 // element-sizes & animation
 $indentationTop: clamp(2rem, 0.718rem + 5.47vw, 4rem); // 32 - 64
 $indentationX: clamp(1rem, 0.359rem + 2.74vw, 2rem); //16 - 32
-$transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-$borderRadius: clamp(1rem, 0.679rem + 1.37vw, 1.5rem);
+$transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1); //
+$borderRadius: clamp(1rem, 0.679rem + 1.37vw, 1.5rem); // 
 
 
 @keyframes fade {

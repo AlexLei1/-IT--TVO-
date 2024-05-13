@@ -1,0 +1,47 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+	gap: 8px;
+	.imgWrapper {
+		position: relative;
+    padding: 17px 17px 60%;
+	
+		>img {
+			object-fit: cover;
+			border-radius: $borderRadius;
+			object-position: top center;
+		}
+		.imgContent {
+			position: absolute;
+			bottom: 12px;
+			right: 10px;
+
+
+			.time{
+				
+				width: fit-content;
+				border: 1px solid $white-color-opacity;
+				background-color: $gray-color-opacity;
+				border-radius: 8px;
+				padding: 5px 5px;
+			}
+		}
+	}
+
+	.contentWrapper {
+		display: flex;
+		flex-direction: column;
+
+		> h5 {
+			font-size: $fz-xl-adaptive;
+		}
+
+		> p {
+			font-size: 16px;
+		}
+	}
+}
