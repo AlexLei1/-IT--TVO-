@@ -1,0 +1,22 @@
+@import 'assets/styles/variables';
+@import 'assets/styles/mixins';
+
+.button {
+	background-color: transparent;
+	border: none;
+	padding: 8px 6px;
+	transition: $transition;
+
+	text-align: left;
+	color: gray;
+	text-align: center;
+
+	> span {
+		white-space: nowrap;
+		font-size: $fz-xl;
+	}
+}
+
+.active {
+	color: white;
+}
